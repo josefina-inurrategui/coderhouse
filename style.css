@@ -1,0 +1,123 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: lavender;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100px;
+}
+
+.listaMenu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  width: 60%;
+  margin: auto;
+
+  list-style: none;
+
+
+  border: solid 1px black;
+}
+
+.productos{
+  position: relative;
+}
+.subMenu{
+  display: none;
+  position: absolute;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 200%;
+  background-color: purple;
+  color: white;
+}
+.subMenu li{
+  display: block;
+}
+
+.productos:hover .subMenu{
+  display:block;
+}
+
+
+.logo{
+  width: 100px;
+  position: relative;
+  top: 70px;
+}
+/* .contenedorFlex{
+  border: solid black 1px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  align-items: stretch;
+  width: 80%;
+}
+.cajaAzul{
+  width: 40%;
+  height: 50px;
+  background-color: blue;
+  border: solid black 1px;
+  align-self:center
+}
+.cajaVerde{
+  width: 20%;
+  height: 50px;
+  background-color: green;
+  border: solid black 1px;
+}
+.cajaRoja{
+  width: 40%;
+  height: 50px;
+  background-color: red;
+  border: solid black 1px;
+} */
+
+.caja{
+  /* border: solid 1px black; */
+/*   padding: 10px 20px 30px 40px; */
+  margin: 10px;
+
+  width: 80%;
+  height: 50%;
+}
+.caja p{
+  border: solid 1px red;
+  width: 100px;
+}
+.caja span{
+  color: blue;
+  font-weight: 600;
+}
+
+.caja video{
+  width: 400px;
+  border-radius: 15px;
+}
+
+.contenido{
+  display: flex;
+}
+
+@media only screen and (max-width:768px){
+  .contenido{
+    flex-direction: column;
+  }
+
+}
